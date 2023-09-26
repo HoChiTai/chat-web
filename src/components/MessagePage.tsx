@@ -5,7 +5,7 @@ import FriendList from '@/components/FriendList';
 import FriendItem from '@/components/FriendItem';
 import MessageList from '@/components/MessageList';
 import MessageItem from '@/components/MessageItem';
-import images from '@/assets/images/images';
+import avatar from '@Images/avatar.png';
 
 function MessagePage() {
   return (
@@ -35,7 +35,7 @@ function MessagePage() {
         <div className="w-9/12 h-screen flex flex-col">
           <nav className="flex p-2 bg-white h-14">
             <div className="flex items-center">
-              <Image className="rounded-full h-8 w-8" alt="T" src={images.avatar} />
+              <Image className="rounded-full h-8 w-8" alt="T" src={avatar} />
               <div className="px-2 py-1 flex flex-col justify-center">
                 <h1 className="text-sm">Teo</h1>
                 <h1 className="text-xs">Active</h1>
