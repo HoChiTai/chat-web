@@ -1,4 +1,4 @@
-const images = {
+const images: { readonly avatar: NodeRequire } = {
   avatar: require('./avatar.png'),
 };
 

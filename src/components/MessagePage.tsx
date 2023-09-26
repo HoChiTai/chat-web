@@ -3,18 +3,18 @@ import { BsSearch } from 'react-icons/bs';
 import { AiFillLike } from 'react-icons/ai';
 import FriendList from '@/components/FriendList';
 import FriendItem from '@/components/FriendItem';
-import MessengerList from '@/components/MessengerList';
-import MessengerItem from '@/components/MessengerItem';
+import MessageList from '@/components/MessageList';
+import MessageItem from '@/components/MessageItem';
 import images from '@/assets/images/images';
 
-function MessengerPage() {
+function MessagePage() {
   return (
     <div className="min-h-screen bg-base-200">
       <div className="flex">
         <div className="w-3/12 h-screen bg-white flex">
           <div className="flex-column w-1/4 h-screen bg-blue-400"></div>
           <div className="p-4 w-full flex flex-col">
-            <h2 className="mb-4 font-bold text-xl">Messenger</h2>
+            <h2 className="mb-4 font-bold text-xl">Message</h2>
             <div className="w-full flex items-center p-2 mb-2 border rounded-md bg-base-200">
               <div className=" text-slate-400">
                 <BsSearch />
@@ -42,16 +42,16 @@ function MessengerPage() {
               </div>
             </div>
           </nav>
-          <MessengerList>
-            <MessengerItem type="sending" />
-            <MessengerItem type="sending" />
-            <MessengerItem type="receive" />
-            <MessengerItem type="sending" />
-            <MessengerItem type="receive" />
-            <MessengerItem type="sending" />
-            <MessengerItem type="receive" />
-            <MessengerItem type="sending" />
-          </MessengerList>
+          <MessageList>
+            <MessageItem type="sending" />
+            <MessageItem type="sending" />
+            <MessageItem type="receive" />
+            <MessageItem type="sending" />
+            <MessageItem type="receive" />
+            <MessageItem type="sending" />
+            <MessageItem type="receive" />
+            <MessageItem type="sending" />
+          </MessageList>
           <div className="flex items-center p-4 h-18 bg-white">
             <div className="flex-1 py-2 px-4 bg-base-200 rounded-full ">
               <input type="text" className="w-full text-sm bg-inherit outline-none " placeholder="Your messages..." />
@@ -66,4 +66,4 @@ function MessengerPage() {
   );
 }
 
-export default MessengerPage;
+export default MessagePage;

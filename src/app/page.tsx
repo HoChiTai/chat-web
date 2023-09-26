@@ -1,8 +1,8 @@
-import MessengerPage from '@/components/MessengerPage';
+import MessagePage from '@/components/MessagePage';
 import Login from '@Components/Login';
 
 export default function Home() {
   const isLogin: boolean = true;
 
-  return isLogin ? <MessengerPage /> : <Login />;
+  return isLogin ? <MessagePage /> : <Login />;
 }

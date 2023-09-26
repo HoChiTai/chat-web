@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import images from '@/assets/images/images';
 
-function MessengerItem({ type = 'sending' }: { type: string }) {
+function MessageItem({ type = 'sending' }: { type: string }) {
   return type === 'sending' ? (
     <div className="flex flex-row-reverse pl-2 py-4">
       <div className="px-2 flex flex-col justify-center max-w-[45%]">
@@ -24,4 +24,4 @@ function MessengerItem({ type = 'sending' }: { type: string }) {
   );
 }
 
-export default MessengerItem;
+export default MessageItem;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import images from '@/assets/images/images';
 
-function MessengerItem() {
+function MessageItem() {
   return (
     <div className="flex py-2">
       <Image className="rounded-full h-12 w-12" alt="T" src={images.avatar} />
@@ -13,4 +13,4 @@ function MessengerItem() {
   );
 }
 
-export default MessengerItem;
+export default MessageItem;
