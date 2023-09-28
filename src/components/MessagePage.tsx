@@ -6,13 +6,23 @@ import FriendItem from '@/components/FriendItem';
 import MessageList from '@/components/MessageList';
 import MessageItem from '@/components/MessageItem';
 import avatar from '@Images/avatar.png';
+import { removeUserItemDataStore } from '@Utils/store';
 
 function MessagePage() {
+  const logout = () => {
+    removeUserItemDataStore();
+    window.location.reload();
+  };
+
   return (
     <div className="min-h-screen bg-base-200">
       <div className="flex">
         <div className="w-3/12 h-screen bg-white flex">
-          <div className="flex-column w-1/4 h-screen bg-blue-400"></div>
+          <div className="flex-column w-1/4 h-screen bg-blue-400">
+            <button className="text-center w-full p-2 bg-red-500" onClick={logout}>
+              Out
+            </button>
+          </div>
           <div className="p-4 w-full flex flex-col">
             <h2 className="mb-4 font-bold text-xl">Message</h2>
             <div className="w-full flex items-center p-2 mb-2 border rounded-md bg-base-200">
